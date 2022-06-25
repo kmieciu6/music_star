@@ -4,9 +4,9 @@ import Header from "./Header";
 
 const Contact = () => {
     return (
-        <>
+        <section id='contact'>
             <Header/>
-        </>
+        </section>
     );
 }
 

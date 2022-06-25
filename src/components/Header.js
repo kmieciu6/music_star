@@ -3,8 +3,9 @@ import '../scss/main.scss'
 
 const Header = () => {
     return (
-        <>
-        </>
+        <section id='header'>
+
+        </section>
     );
 }
 
