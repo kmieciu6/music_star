@@ -6,35 +6,60 @@
   text-align: center;
 
   .logo {
-    width: 60%;
+    width: 50%;
     transition: 1s;
+
+    @include desktop {
+      width: 60%;
+    }
 
     &:hover {
       width: 70%;
     }
   }
 
-  .nav {
+  .navbar {
     display: flex;
-    width: 80%;
+    justify-content: space-around;
+    padding: 0;
+    background: black;
+    margin-right: 4rem;
+
+    @include desktop {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .toggle {
+      background: red;
+    }
+
+    .collapse {
+      background: black;
+    }
 
     .linkHeader {
       font-family: $font-josefin;
+      font-size: 1rem;
       color: $color-header;
-      font-size: 1.3rem;
       text-decoration: none;
       padding: 1rem;
-      margin: 2rem;
+      margin: 1rem;
       border: 2px solid black;
       transition: 1s;
 
-      &:hover {
-        border: 2px solid $color-header;
-        font-size: 1.5rem;
-      }
+      @include desktop {
+        font-size: 1.3rem;
 
-      &:active {
-        color: white;
+        &:hover {
+          border: 2px solid $color-header;
+          font-size: 1.5rem;
+        }
+
+        &:active {
+          color: $color-light;
+          border: 2px solid $color-light;
+        }
       }
     }
   }
