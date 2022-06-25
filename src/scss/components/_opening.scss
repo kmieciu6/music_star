@@ -1,0 +1,14 @@
+.opening {
+
+  img {
+    height: 35vh;
+
+    @include tablet {
+      height: 60vh;
+    }
+
+    @include desktop {
+      height: 80vh;
+    }
+  }
+}

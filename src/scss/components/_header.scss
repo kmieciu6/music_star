@@ -23,7 +23,11 @@
     justify-content: space-around;
     padding: 0;
     background: black;
-    margin-right: 4rem;
+    margin-right: 1rem;
+
+    @include tablet {
+      margin-right: 4rem;
+    }
 
     @include desktop {
       width: 100%;
@@ -32,6 +36,10 @@
 
     .toggle {
       background: red;
+
+      @include mobile {
+        padding: 0.2rem 0.3rem;
+      }
     }
 
     .collapse {
@@ -43,12 +51,14 @@
       font-size: 1rem;
       color: $color-header;
       text-decoration: none;
-      padding: 1rem;
-      margin: 1rem;
       border: 2px solid black;
       transition: 1s;
+      padding: 0.5rem 2rem;
+      margin: 0.2rem;
 
       @include desktop {
+        padding: 1rem;
+        margin: 1rem;
         font-size: 1.3rem;
 
         &:hover {
