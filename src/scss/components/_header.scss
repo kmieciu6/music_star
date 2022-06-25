@@ -7,6 +7,11 @@
 
   .logo {
     width: 60%;
+    transition: 1s;
+
+    &:hover {
+      width: 70%;
+    }
   }
 
   .nav {
@@ -14,7 +19,9 @@
     width: 80%;
 
     .linkHeader {
+      font-family: $font-josefin;
       color: $color-header;
+      font-size: 1.3rem;
       text-decoration: none;
       padding: 1rem;
       margin: 2rem;
@@ -23,11 +30,11 @@
 
       &:hover {
         border: 2px solid $color-header;
+        font-size: 1.5rem;
       }
 
       &:active {
-        border: 2px solid yellow;
-        color: yellow;
+        color: white;
       }
     }
   }
