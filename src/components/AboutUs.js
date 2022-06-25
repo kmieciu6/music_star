@@ -6,6 +6,7 @@ const AboutUs = () => {
     return (
         <section id='aboutUs'>
             <Header/>
+
         </section>
     );
 }
