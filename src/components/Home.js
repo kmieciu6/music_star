@@ -1,13 +1,16 @@
 import React from 'react';
-import '../scss/main.scss'
 import Header from './Header';
 import Opening from "./Opening";
+import Video from "./Video";
+import Footer from "./Footer";
 
 const Home = () => {
     return (
         <section id='home'>
             <Header/>
             <Opening/>
+            <Video embedId="3B1flDAyb48"/>
+            <Footer/>
         </section>
     );
 }

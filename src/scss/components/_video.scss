@@ -1,0 +1,13 @@
+.video-responsive {
+  background: $color-dark;
+  display: flex;
+  justify-content: center;
+}
+
+.video-responsive iframe {
+  margin: 5rem 6rem;
+
+  @include mobile {
+    height: 20vh;
+  }
+}

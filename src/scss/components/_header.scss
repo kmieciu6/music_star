@@ -1,6 +1,6 @@
 #header {
   padding: 1.5rem;
-  background: black;
+  background: $color-dark;
   display: flex;
   align-items: center;
   text-align: center;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
-    background: black;
+    background: $color-dark;
     margin-right: 1rem;
 
     @include tablet {
@@ -43,7 +43,7 @@
     }
 
     .collapse {
-      background: black;
+      background: $color-dark;
     }
 
     .linkHeader {
@@ -51,7 +51,7 @@
       font-size: 1rem;
       color: $color-header;
       text-decoration: none;
-      border: 2px solid black;
+      border: 2px solid $color-dark;
       transition: 1s;
       padding: 0.5rem 2rem;
       margin: 0.2rem;
