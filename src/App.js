@@ -4,7 +4,6 @@ import './scss/main.scss';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Concerts from './components/Concerts';
-import Contact from "./components/form/Contact";
 
 const App = () => {
     return (
@@ -13,7 +12,6 @@ const App = () => {
                 <Route exact path={'/'} element={<Home/>}/>
                 <Route exact path={'AboutUs'} element={<AboutUs/>}/>
                 <Route exact path={'Concerts'} element={<Concerts/>}/>
-                <Route exact path={'Contact'} element={<Contact/>}/>
             </Routes>
         </HashRouter>
     );
