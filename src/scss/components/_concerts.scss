@@ -11,6 +11,10 @@
 
   .accordion {
     width: 50%;
+
+    @include mobile {
+      width: 70%;
+    }
   }
 
   .accordion-item {
