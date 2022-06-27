@@ -13,31 +13,31 @@ const AboutUs = () => {
         <section id='aboutUs'>
             <Header/>
             <div>
-                <h1>O nas</h1>
+                <h1>Członkowie zespołu</h1>
                 <div className='stars'>
                     <div className='star'>
                         <img src={star1} alt='Jan_Borysewicz'/>
-                        <h3>Jan Borysewicz – gitara, śpiew</h3>
+                        <h4>Jan Borysewicz – gitara, śpiew</h4>
                     </div>
                     <div className='star'>
                         <img src={star2} alt='Janusz_Panasewicz'/>
-                        <h3>Janusz Panasewicz – śpiew</h3>
+                        <h4>Janusz Panasewicz – śpiew</h4>
                     </div>
                     <div className='star'>
                         <img src={star3} alt='Kuba_Jabłoński'/>
-                        <h3>Kuba Jabłoński – perkusja</h3>
+                        <h4>Kuba Jabłoński – perkusja</h4>
                     </div>
                     <div className='star'>
                         <img src={star4} alt='Krzysztof_Kieliszkiewicz'/>
-                        <h3>Krzysztof Kieliszkiewicz – gitara basowa</h3>
+                        <h4>Krzysztof Kieliszkiewicz – gitara basowa</h4>
                     </div>
                     <div className='star'>
                         <img src={star5} alt='Michał_Sitarski'/>
-                        <h3>Michał Sitarski – gitara (stały sideman)</h3>
+                        <h4>Michał Sitarski – gitara (stały sideman)</h4>
                     </div>
                 </div>
 
-                <h1> Historia</h1>
+                <h1>Historia</h1>
                 <p>Zespół Lady Pank to jeden z najpopularniejszych i najbardziej legendarnych polskich zespołów
                     rockowych. Powstał we Wrocławiu, we wrześniu 1981 roku, z inicjatywy gitarzysty i kompozytora,
                     Jana
