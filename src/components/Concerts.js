@@ -4,12 +4,13 @@ import Header from './Header';
 import Footer from './Footer';
 import Accordion from './Accordion';
 import {concertsData} from './concertsData'
+import '../scss/main.scss'
 
 const Concerts = () => {
     return (
         <section id='concerts'>
             <Header/>
-            <div>
+            <div className='list'>
                 <h1>Koncerty</h1>
                 <div className="accordion">
                     {concertsData.map(({title, place, adres, hour, ticket}) =>

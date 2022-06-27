@@ -6,7 +6,7 @@ import logoIG from '../assets/logo_instagram.png';
 const Footer = () => {
     return (
         <section className='footer'>
-            <h1>Znajdź nas</h1>
+            <h2>Znajdź nas</h2>
             <div className='media'>
                 <a href='https://www.facebook.com/LadyPank'><img src={logoFB} alt="facebook" className='logo'/></a>
                 <a href='https://www.instagram.com/ladypank_official/?hl=pl'><img src={logoIG} alt="instagram"

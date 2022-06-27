@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $background-concerts;
+
+  h1 {
+    margin: 2rem 0;
+    color: $color-header;
+  }
+
+  .accordion {
+    width: 50%;
+  }
+
+  .accordion-item {
+    margin-bottom: 3rem;
+    background: $color-list;
+    border: none;
+  }
+
+  .accordion-title {
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .accordion-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .accordion-content {
+      padding-bottom: 1rem;
+    }
+  }
+}

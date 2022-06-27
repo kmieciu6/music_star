@@ -35,7 +35,7 @@
     }
 
     .toggle {
-      background: red;
+      background: $color-header;
 
       @include mobile {
         padding: 0.2rem 0.3rem;

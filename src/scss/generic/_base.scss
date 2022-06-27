@@ -3,12 +3,10 @@
   font-family: $font-josefin;
 }
 
-.container {
-  max-width: 1352px;
-  margin: 0 auto;
+h1 {
+  font-size: 4rem;
+}
 
-  @media (max-width: 1352px) {
-    width: 100%;
-    padding: 0 15px;
-  }
+h2 {
+  font-size: 2.5rem;
 }
