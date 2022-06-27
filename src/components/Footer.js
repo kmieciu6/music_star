@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
 import '../scss/main.scss'
-import {Link} from "react-router-dom";
+import logoFB from '../assets/logo_facebook.png';
+import logoIG from '../assets/logo_instagram.png';
 
 const Footer = () => {
     return (
-      <section className='footer'>
-          <Link to='https://www.facebook.com/LadyPank'></Link>
-          <Link to='https://www.instagram.com/ladypank_official/?hl=pl'></Link>
-      </section>
+        <section className='footer'>
+            <h1>Znajdź nas</h1>
+            <div className='media'>
+                <a href='https://www.facebook.com/LadyPank'><img src={logoFB} alt="facebook" className='logo'/></a>
+                <a href='https://www.instagram.com/ladypank_official/?hl=pl'><img src={logoIG} alt="instagram"
+                                                                                  className='logo'/></a>
+            </div>
+        </section>
     );
 }
 

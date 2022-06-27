@@ -3,8 +3,8 @@ import {HashRouter, Route, Routes} from 'react-router-dom';
 import './scss/main.scss';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
-import Contact from './components/Contact';
 import Concerts from './components/Concerts';
+import Contact from "./components/Contact";
 
 const App = () => {
     return (
