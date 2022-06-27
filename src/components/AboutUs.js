@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/main.scss';
 import Header from "./Header";
 import Footer from "./Footer";
-import star1 from '../assets/Borysewicz.png'
+import star1 from '../assets/Borysewicz.jpg'
 import star2 from '../assets/Panasewicz.jpg'
 import star3 from '../assets/Jabłoński.jpg'
 import star4 from '../assets/Kieliszkiewicz.jpg'
