@@ -17,7 +17,12 @@
     margin-bottom: 3rem;
     background: $color-list;
     border: none;
-    border-radius: 50px 20px;
+    border-radius: 10px;
+    transition: 1s;
+
+    &:hover {
+      border-radius: 50px 20px;
+    }
   }
 
   .accordion-title {
