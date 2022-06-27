@@ -4,7 +4,7 @@ import './scss/main.scss';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Concerts from './components/Concerts';
-import Contact from "./components/Contact";
+import Contact from "./components/form/Contact";
 
 const App = () => {
     return (

@@ -3,8 +3,15 @@ import '../scss/main.scss';
 import {Link} from 'react-router-dom';
 import logo from '../assets/logo.png'
 import {Navbar, Nav} from "react-bootstrap";
+import {Container} from "./form/Container";
 
 const Header = () => {
+    const triggerText = 'Kontakt';
+    const onSubmit = (event) => {
+        event.preventDefault(event);
+        console.log(event.target.name.value);
+        console.log(event.target.email.value);
+    }
     return (
         <section id='header'>
             <Link to='/'><img src={logo} alt='Lady Pank' className='logo'/></Link>
@@ -15,7 +22,7 @@ const Header = () => {
                         <Link className='linkHeader' to='/'>Strona główna</Link>
                         <Link className='linkHeader' to='/AboutUs'>O nas</Link>
                         <Link className='linkHeader' to='/Concerts'>Koncerty</Link>
-                        <Link className='linkHeader' to='/Contact'>Kontakt</Link>
+                        <Container className='linkHeader' triggerText={triggerText} onSubmit={onSubmit}/>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
