@@ -1,8 +1,150 @@
-.stars {
+#aboutUs {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
-  img {
-    height: 50vh;
+  h1 {
+    margin-top: 3rem;
+  }
+
+  .stars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .star {
+      position: relative;
+      height: 30rem;
+      width: 30rem;
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .photo {
+        border-radius: 50%;
+        height: 80%;
+        width: 80%;
+        transition: 2s;
+        z-index: 1;
+        position: absolute;
+
+        &:hover {
+          opacity: 0.2;
+          z-index: -1;
+        }
+      }
+
+      &:first-of-type .photo {
+        background: url("../../assets/Borysewicz.jpg") center/cover;
+      }
+
+      &:nth-of-type(2) .photo {
+        background: url("../../assets/Panasewicz.jpg") top/cover;
+      }
+
+      &:nth-of-type(3) .photo {
+        background: url("../../assets/Jabłoński.jpg") top/cover;
+      }
+
+      &:nth-of-type(4) .photo {
+        background: url("../../assets/Kieliszkiewicz.jpg") top/cover;
+      }
+
+      &:last-of-type .photo {
+        background: url("../../assets/Sitarski.jpg") center/cover;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+      }
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .history {
+    background: radial-gradient(darkred, black);
+    color: $color-light;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin: 4rem 0;
+    }
+
+    .history_text {
+      display: flex;
+      max-width: 75%;
+
+      @include mobile {
+        max-width: 85%;
+      }
+
+      img {
+        width: 25rem;
+        height: 30vh;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50%;
+        margin: 1rem;
+
+        &:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+        }
+      }
+
+      @include desktop {
+        @keyframes shake {
+          0% {
+            transform: translate(1px, 1px) rotate(0deg);
+          }
+          10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+          }
+          20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+          }
+          30% {
+            transform: translate(3px, 2px) rotate(0deg);
+          }
+          40% {
+            transform: translate(1px, -1px) rotate(1deg);
+          }
+          50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+          }
+          60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+          }
+          70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+          }
+          80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+          }
+          90% {
+            transform: translate(1px, 2px) rotate(0deg);
+          }
+          100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+          }
+        }
+      }
+
+      p {
+        font-family: $font-domine;
+        text-align: justify;
+      }
+    }
   }
 }
